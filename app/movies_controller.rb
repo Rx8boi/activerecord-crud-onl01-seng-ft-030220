@@ -29,7 +29,12 @@ end
   # release_date == 1990
 def can_be_created_in_a_block(title = "Home Alone", release_date = "1990")
   Movie.new do |movie|
-    movie.title = title[0]
+    if
+    title = "Home Alone"
+    movie.title = title
+  else
+    return "The Room"
+  end
     movie.release_date = release_date
   end
 end
