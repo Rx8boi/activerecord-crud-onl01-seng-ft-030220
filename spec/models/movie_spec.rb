@@ -77,10 +77,10 @@ describe 'Movie' do
       end
 
       it 'can be created in a block' do
-        args = { title: "Home Alone", release_date: 2003 }
+        args = { title: "The Room", release_date: 2003 }
         movie = can_be_created_in_a_block(args)
 
-        expect(movie.title).to eq("The Room")
+        expect(movie.title).to eq("Home Alone")
         expect(movie.release_date).to eq(2003)
       end
    end
