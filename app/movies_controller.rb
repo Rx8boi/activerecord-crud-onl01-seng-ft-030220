@@ -27,7 +27,7 @@ end
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
-  def can_be_created_in_a_block
+  def can_be_created_in_a_block(release_date=1990)
     Movie.create do |m|
       binding.pry
     m.title = "Home Alone"
